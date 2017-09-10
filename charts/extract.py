@@ -79,4 +79,4 @@ for height in range(blockcount, SEGWIT_START - 1, -1):
         'txsegwit': txsegwit,
     })
 
-json.dump(data, open('data.json', 'wt'), indent=2)
+json.dump(data, open('data.json', 'wt'), indent=2, sort_keys=True)

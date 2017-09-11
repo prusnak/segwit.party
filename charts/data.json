@@ -1,5 +1,104 @@
 [
   {
+    "hash": "000000000000000001177c57e6f7574c5fb1b2a25a6ea222ac8e1710c6f0fcc9",
+    "height": 484592,
+    "size": 487198,
+    "strippedsize": 483846,
+    "txsegwit": 13,
+    "txtotal": 943,
+    "weight": 1938736
+  },
+  {
+    "hash": "0000000000000000011e31b3d1b8a741aa68dd9be36fadbd4c9f0bda7926e759",
+    "height": 484591,
+    "size": 33755,
+    "strippedsize": 33719,
+    "txsegwit": 1,
+    "txtotal": 77,
+    "weight": 134912
+  },
+  {
+    "hash": "00000000000000000036b89a753bb5ab4f9928e68fc55b78d62637adb680f440",
+    "height": 484590,
+    "size": 196896,
+    "strippedsize": 196636,
+    "txsegwit": 2,
+    "txtotal": 146,
+    "weight": 786804
+  },
+  {
+    "hash": "00000000000000000125260c7c81c990eb70b4fa99bcabe0084a92bf296dd26b",
+    "height": 484589,
+    "size": 993198,
+    "strippedsize": 979660,
+    "txsegwit": 40,
+    "txtotal": 790,
+    "weight": 3932178
+  },
+  {
+    "hash": "000000000000000000a1ac4e4f3cccd6ff78bd0fff938a387c1b20e73b0dca75",
+    "height": 484588,
+    "size": 995566,
+    "strippedsize": 995566,
+    "txsegwit": 0,
+    "txtotal": 1741,
+    "weight": 3982264
+  },
+  {
+    "hash": "000000000000000000ec0ebdb6c4c14b4ae509ae6dd1ee401b9f8fb84faffecd",
+    "height": 484587,
+    "size": 783004,
+    "strippedsize": 775046,
+    "txsegwit": 25,
+    "txtotal": 1530,
+    "weight": 3108142
+  },
+  {
+    "hash": "00000000000000000051bc8a888ca5147c5aa8699e6bedcf9dc25c7cb1573bfc",
+    "height": 484586,
+    "size": 523903,
+    "strippedsize": 517253,
+    "txsegwit": 32,
+    "txtotal": 1020,
+    "weight": 2075662
+  },
+  {
+    "hash": "0000000000000000000f6c1a0e1705084e4c5c0f708299e019dd47beb8da072d",
+    "height": 484585,
+    "size": 632158,
+    "strippedsize": 624883,
+    "txsegwit": 28,
+    "txtotal": 937,
+    "weight": 2506807
+  },
+  {
+    "hash": "000000000000000000d6367cf45e0f0886d82d9880ace690bea7d13eee77c6da",
+    "height": 484584,
+    "size": 1004720,
+    "strippedsize": 996155,
+    "txsegwit": 42,
+    "txtotal": 1668,
+    "weight": 3993185
+  },
+  {
+    "hash": "00000000000000000116ed3ad6ac7c7added12c8b9c53e3d2987caf14f5be4bb",
+    "height": 484583,
+    "size": 999179,
+    "strippedsize": 988790,
+    "txsegwit": 34,
+    "txtotal": 1909,
+    "weight": 3965549
+  },
+  {
+    "hash": "000000000000000000076e026bc3fe5784ff05d413d465f4d04df63d6fcfca4c",
+    "height": 484582,
+    "size": 1009391,
+    "strippedsize": 994582,
+    "txsegwit": 60,
+    "txtotal": 1870,
+    "weight": 3993137
+  },
+  {
     "hash": "00000000000000000105daf4672dd1f72070cf23c513532d5f328e9e6db0628c",
     "height": 484581,
     "size": 264901,

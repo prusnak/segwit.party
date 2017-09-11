@@ -72,7 +72,7 @@ for height in range(blockcount, SEGWIT_START - 1, -1):
     strippedsize, size, weight, txtotal, txsegwit = struct.unpack('>IIIII', v)
     data.append({
         'height': height,
-        'hash': binascii.hexlify(h).decode(),
+        # 'hash': binascii.hexlify(h).decode(),
         'strippedsize': strippedsize,
         'size': size,
         'weight': weight,
@@ -81,4 +81,4 @@ for height in range(blockcount, SEGWIT_START - 1, -1):
     })
 
 shutil.copyfile('data.json', 'data.json.last')
-json.dump(data, open('data.json', 'wt'), indent=2, sort_keys=True)
+json.dump(data, open('data.json', 'wt'), sort_keys=True)

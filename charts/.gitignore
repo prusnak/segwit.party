@@ -1,3 +1,4 @@
 __pycache__/
 data/
 rpc_credentials.py
+server

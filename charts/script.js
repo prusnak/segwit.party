@@ -1,6 +1,10 @@
 var myMovingAverage = function(arr, win) {
     var filtered = medianFilter(arr, 5);
-    return movingAverage(filtered, win);
+    var prefill = new Array(win);
+    prefill.fill(0);
+    filtered = prefill.concat(filtered);
+    averaged = movingAverage(filtered, win);
+    return averaged.slice(win);
 }
 
 var ctx_count_percent = document.getElementById('chart_count_percent').getContext('2d');

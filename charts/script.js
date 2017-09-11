@@ -1,24 +1,7 @@
-var median = function(a, b, c) {
-    return ((a - b) * (b - c) > -1 ? b : ((a - b) * (a - c) < 1 ? a : c));
+var myMovingAverage = function(arr, win) {
+    var filtered = medianFilter(arr, 5);
+    return movingAverage(filtered, win);
 }
-
-var movingAverage = function(data, len) {
-    filtered = new Array(data.length);
-    for (var i = 1; i < data.length - 1; i++) {
-        filtered[i] = median(data[i - 1], data[i], data[i + 1]);
-    }
-    var res = new Array(data.length);
-    for (var i = 0; i < data.length; i++) {
-        var sum = 0;
-        for (var j = 0; j < len; j++) {
-            if (i - j >= 0) {
-                sum += filtered[i - j];
-            }
-        }
-        res[i] = sum / len;
-    }
-    return res;
-};
 
 var ctx_count_percent = document.getElementById('chart_count_percent').getContext('2d');
 var ctx_count = document.getElementById('chart_count').getContext('2d');
@@ -103,7 +86,7 @@ var drawCharts = function(period) {
             labels: blockData.map(function(item){ return item.height; }).slice(-period),
             datasets: [{
                 label: '144-block moving average',
-                data: movingAverage(count_percent, 144).slice(-period),
+                data: myMovingAverage(count_percent, 144).slice(-period),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
@@ -147,7 +130,7 @@ var drawCharts = function(period) {
             labels: blockData.map(function(item){ return item.height; }).slice(-period),
             datasets: [{
                 label: '144-block moving average',
-                data: movingAverage(size_percent, 144).slice(-period),
+                data: myMovingAverage(size_percent, 144).slice(-period),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1

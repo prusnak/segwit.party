@@ -3,19 +3,16 @@ var median = function(a, b, c) {
 }
 
 var movingAverage = function(data, len) {
-    data = data.slice();
+    filtered = new Array(data.length);
     for (var i = 1; i < data.length - 1; i++) {
-        data[i] = median(data[i - 1], data[i], data[i + 1]);
+        filtered[i] = median(data[i - 1], data[i], data[i + 1]);
     }
-    var res = data.slice();
-    for (var i = 0; i < len; i++) {
-        res[i] = NaN;
-    }
+    var res = new Array(data.length);
     for (var i = 0; i < data.length; i++) {
         var sum = 0;
         for (var j = 0; j < len; j++) {
             if (i - j >= 0) {
-                sum += data[i - j];
+                sum += filtered[i - j];
             }
         }
         res[i] = sum / len;

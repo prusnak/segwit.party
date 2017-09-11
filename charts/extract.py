@@ -3,6 +3,7 @@
 import binascii
 import struct
 import json
+import shutil
 
 from db import db
 from rpc import rpc
@@ -79,4 +80,5 @@ for height in range(blockcount, SEGWIT_START - 1, -1):
         'txsegwit': txsegwit,
     })
 
+shutil.copyfile('data.json', 'data.json.last')
 json.dump(data, open('data.json', 'wt'), indent=2, sort_keys=True)

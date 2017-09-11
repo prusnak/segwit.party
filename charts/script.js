@@ -12,6 +12,10 @@ var ctx_count = document.getElementById('chart_count').getContext('2d');
 var ctx_size_percent = document.getElementById('chart_size_percent').getContext('2d');
 var ctx_size = document.getElementById('chart_size').getContext('2d');
 
+// global settings:
+
+Chart.defaults.global.elements.line.tension = 0;
+
 var chart_count_percent = new Chart(ctx_count_percent, {
     type: 'line',
     options: {

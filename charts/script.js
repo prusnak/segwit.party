@@ -31,7 +31,8 @@ var chart_count_percent = new Chart(ctx_count_percent, {
         scales: {
             yAxes: [{
                 ticks: {
-                    callback: function(value, index, values) { return value.toPrecision(2) + '%'; }
+                    callback: function(value, index, values) { return value.toFixed(2) + '%'; },
+                    beginAtZero: true
                 }
             }]
         },
@@ -53,7 +54,8 @@ var chart_size_percent = new Chart(ctx_size_percent, {
         scales: {
             yAxes: [{
                 ticks: {
-                    callback: function(value, index, values) { return value.toPrecision(2) + '%'; }
+                    callback: function(value, index, values) { return value.toFixed(2) + '%'; },
+                    beginAtZero: true
                 }
             }]
         },

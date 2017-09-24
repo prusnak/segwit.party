@@ -1,10 +1,22 @@
-var myMovingAverage = function(arr, win) {
-    var filtered = medianFilter(arr, 5);
+var myMovingAverage2 = function(arr1, arr2, win) {
+    if (arr1.length != arr2.length) return [];
+
     var prefill = new Array(win);
     prefill.fill(0);
-    filtered = prefill.concat(filtered);
-    averaged = movingAverage(filtered, win);
-    return averaged.slice(win);
+    arr1 = prefill.concat(arr1);
+    arr2 = prefill.concat(arr2);
+
+    res = [];
+    
+    for (var i = win; i <= arr1.length; i++) {
+        sum1 = sum2 = 0;
+        for (var j = i - win; j < i; j++) {
+            sum1 += arr1[j];
+            sum2 += arr2[j];
+        }
+        res.push(sum1/sum2*100);
+    }
+    return res;
 }
 
 var ctx_count_percent = document.getElementById('chart_count_percent').getContext('2d');
@@ -90,12 +102,14 @@ var drawCharts = function(period) {
         };
 
         var count_percent = blockData.map(function(item){ return item.txsegwit <= 1 ? 0 : 100 * (item.txsegwit) / (item.txtotal); });
+        var count_segwit = blockData.map(function(item){ return item.txsegwit; });
+        var count_total = blockData.map(function(item){ return item.txtotal; });
 
         var data_count_percent = {
             labels: blockData.map(function(item){ return item.height; }).slice(-period),
             datasets: [{
                 label: '144-block moving average',
-                data: myMovingAverage(count_percent, 144).slice(-period),
+                data: myMovingAverage2(count_segwit, count_total, 144).slice(-period),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
@@ -134,12 +148,14 @@ var drawCharts = function(period) {
         };
 
         var size_percent = blockData.map(function(item){ return 100 * (item.size - item.strippedsize) / (item.size); });
+        var size_segwit = blockData.map(function(item){ return item.size - item.strippedsize; });
+        var size_total = blockData.map(function(item){ return item.size; });
 
         var data_size_percent = {
             labels: blockData.map(function(item){ return item.height; }).slice(-period),
             datasets: [{
                 label: '144-block moving average',
-                data: myMovingAverage(size_percent, 144).slice(-period),
+                data: myMovingAverage2(size_segwit, size_total, 144).slice(-period),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
@@ -164,3 +180,4 @@ var drawCharts = function(period) {
         chart_size.update();
     });
 }
+

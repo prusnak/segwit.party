@@ -73,7 +73,7 @@ var chart_size = new Chart(ctx_size, {
 
 var drawCharts = function(period) {
 
-    fetch('http://enyo.gk2.sk:8080/data.json').then(function(response) {
+    fetch('http://enyo.gk2.sk/data.json').then(function(response) {
         return response.json();
     }).then(function(blockData) {
         blockData = blockData.sort(function(a, b) { return a.height - b.height;});

@@ -1,20 +1,16 @@
-var myMovingAverage2 = function(arr1, arr2, win) {
-    if (arr1.length != arr2.length) return [];
-
-    var prefill = new Array(win);
-    prefill.fill(0);
-    arr1 = prefill.concat(arr1);
-    arr2 = prefill.concat(arr2);
-
-    res = [];
-    
-    for (var i = win; i <= arr1.length; i++) {
-        sum1 = sum2 = 0;
-        for (var j = i - win; j < i; j++) {
+var movingAvg2 = function(arr1, arr2, win) {
+    if (arr1.length != arr2.length) {
+        return [];
+    }
+    var res = [];
+    for (var i = 0; i < arr1.length; i++) {
+        var sum1 = 0;
+        var sum2 = 0;
+        for (var j = Math.max(0, i - win); j < i; j++) {
             sum1 += arr1[j];
             sum2 += arr2[j];
         }
-        res.push(sum1/sum2*100);
+        res.push(sum1 / sum2 * 100);
     }
     return res;
 }
@@ -101,7 +97,7 @@ var drawCharts = function(period) {
             }]
         };
 
-        var count_percent = blockData.map(function(item){ return item.txsegwit <= 1 ? 0 : 100 * (item.txsegwit) / (item.txtotal); });
+        var count_percent = blockData.map(function(item){ return 100 * item.txsegwit / item.txtotal; });
         var count_segwit = blockData.map(function(item){ return item.txsegwit; });
         var count_total = blockData.map(function(item){ return item.txtotal; });
 
@@ -109,7 +105,7 @@ var drawCharts = function(period) {
             labels: blockData.map(function(item){ return item.height; }).slice(-period),
             datasets: [{
                 label: '144-block moving average',
-                data: myMovingAverage2(count_segwit, count_total, 144).slice(-period),
+                data: movingAvg2(count_segwit, count_total, 144).slice(-period),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
@@ -155,7 +151,7 @@ var drawCharts = function(period) {
             labels: blockData.map(function(item){ return item.height; }).slice(-period),
             datasets: [{
                 label: '144-block moving average',
-                data: myMovingAverage2(size_segwit, size_total, 144).slice(-period),
+                data: movingAvg2(size_segwit, size_total, 144).slice(-period),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1

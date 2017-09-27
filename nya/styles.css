@@ -70,17 +70,17 @@ table>tbody>tr>td:last-child {
 
 .status-withdrawn,
 .status-withdrawn a {
-    color: rgb(190, 74, 45);
+    color: rgb(107, 136, 40);
 }
 
 .status-supports,
 .status-supports a {
-    color: rgb(107, 136, 40);
+    color: rgb(190, 74, 45);
 }
 
 .status-supports-dcg,
 .status-supports-dcg a {
-    color: rgb(155, 138, 44);
+    color: rgb(190, 74, 45);
 }
 
 .status-movedon,
@@ -90,17 +90,17 @@ table>tbody>tr>td:last-child {
 
 table>tbody>tr.status-withdrawn>th,
 table>tbody>tr.status-withdrawn>td {
-    background: rgba(229, 89, 52, .25);
+    background: rgba(155, 197, 61, .25);
 }
 
 table>tbody>tr.status-supports>th,
 table>tbody>tr.status-supports>td {
-    background: rgba(155, 197, 61, .25);
+    background: rgba(229, 89, 52, .25);
 }
 
 table>tbody>tr.status-supports-dcg>th,
 table>tbody>tr.status-supports-dcg>td {
-    background: rgba(253, 231, 76, .25);
+    background: rgba(229, 89, 52, .25);
 }
 
 table>tbody>tr.status-movedon>th,

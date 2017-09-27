@@ -2,7 +2,7 @@
     {
         "entity": "Bitwala (Germany)",
         "status": 1,
-        "dcg": false,
+        "dcg": true,
         "withdrawnUrl": "https://www.bitwala.com/bitwala-statement-segwit2x/"
     },
     {
@@ -363,6 +363,6 @@
     {
         "entity": "Yours (United States)",
         "status": 3,
-        "dcg": false
+        "dcg": true
     }
 ]

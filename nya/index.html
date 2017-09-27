@@ -1,257 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-	<link href="/bootstrap.min.css" rel="stylesheet">
-	<title>SegWit2x NYA Status</title>
-	<style type="text/css">
-	.footer {
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SegWit2x NYA Status</title>
+    <script type="riot/tag" src="status.tag"></script>
+    <script src="https://cdn.jsdelivr.net/npm/riot@3.7/riot+compiler.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>var xhr=function(){var e=new XMLHttpRequest;return function(n,t,r){e.onreadystatechange=function(){4===e.readyState&&r(e.responseText)},e.open(n,t),e.send()}}();</script>
+    <script>riot.mount('status')</script>
 </head>
 <body>
-	<div class="container">
-		<h1>SegWit2x NYA Status</h1>
-		<table class="table">
-			<thead class="thead-inverse">
-				<tr>
-					<th>entity</th>
-					<th>status</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="table-success">
-					<th>1Hash (China)<br><a href="mailto:admin@1-hash.com">email</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Abra (United States)<br><a href="mailto:contact@abra.com">email</a> / <a href="https://twitter.com/abraglobal">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-success">
-					<th>ANX (Hong Kong)<br><a href="mailto:support@anxintl.com">email</a> / <a href="https://twitter.com/anx_intl">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-success">
-					<th>Bitangel.com/Chandler Guo (China)<br><a href="mailto:chandler@bitangel.com">email</a> / <a href="https://twitter.com/chandlerguo">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-secondary">
-					<th>BitClub Network (Hong Kong)</th>
-					<td>moved on to Bitcoin Cash</td>
-				</tr>
-				<tr class="table-secondary">
-					<th>Bitcoin.com (St. Kitts &amp; Nevis)</th>
-					<td>moved on to Bitcoin Cash</td>
-				</tr>
-				<tr class="table-success">
-					<th>Bitex (Argentina)<br><a href="mailto:hola@bitex.la">email</a> / <a href="https://twitter.com/bitexla">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>bitFlyer (Japan)<br><a href="mailto:info@bitflyer.jp">email</a> / <a href="https://twitter.com/bitflyer">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-success">
-					<th>Bitfury (United States)<br><a href="mailto:info@bitfury.com">email</a> / <a href="https://twitter.com/bitfurygroup">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-secondary">
-					<th>Bitmain (China)</th>
-					<td>moved on to Bitcoin Cash</td>
-				</tr>
-				<tr class="table-warning">
-					<th>BitPay (United States)<br><a href="mailto:media@bitpay.com">email</a> / <a href="https://twitter.com/bitpay">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>BitPesa (Kenya)<br><a href="mailto:info@bitpesa.co">email</a> / <a href="https://twitter.com/bitpesa">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>BitOasis (United Arab Emirates)<br><a href="mailto:help@bitoasis.net">email</a> / <a href="https://twitter.com/bitoasis">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Bitso (Mexico)<br><a href="https://twitter.com/bitso">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-danger">
-					<th>Bitwala (Germany)</th>
-					<td><a href="https://www.bitwala.com/bitwala-statement-segwit2x/">publicly withdrawn</a></td>
-				</tr>
-				<tr class="table-success">
-					<th>Bixin.com (China)<br><a href="mailto:support@bixin.com">email</a> / <a href="https://twitter.com/bixincom">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Blockchain (UK)<br><a href="mailto:press@blockchain.com">email</a> / <a href="https://twitter.com/blockchain">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Bloq (United States)<br><a href="mailto:hello@bloq.com">email</a> / <a href="https://twitter.com/bloqinc">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-secondary">
-					<th>btc.com (China)</th>
-					<td>moved on to Bitcoin Cash</td>
-				</tr>
-				<tr class="table-warning">
-					<th>BTCC (China)<br><a href="mailto:press@btcc.com">email</a> / <a href="https://twitter.com/yourbtcc">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-secondary">
-					<th>BTC.TOP (China)</th>
-					<td>moved on to Bitcoin Cash</td>
-				</tr>
-				<tr class="table-success">
-					<th>BTER.com (China)<br><a href="mailto:admin@mail.bter.com">email</a> / <a href="https://twitter.com/btercom">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Circle (United States)<br><a href="mailto:info@circle.com">email</a> / <a href="https://twitter.com/circlepay">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Civic (United States)<br><a href="mailto:vinny@civic.com">email</a> / <a href="https://twitter.com/civickey">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Coinbase (United States)<br><a href="mailto:press@coinbase.com">email</a> / <a href="https://twitter.com/coinbase">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Coins.ph (Phillipines)<br><a href="mailto:press@coins.ph">email</a> / <a href="https://twitter.com/">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>CryptoFacilities (UK)<br><a href="mailto:press@cryptofacilities.com">email</a> / <a href="https://twitter.com/coinsph">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-success">
-					<th>Decentral (Canada)<br><a href="mailto:info@decentral.ca">email</a> / <a href="https://twitter.com/decentralca">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Digital Currency Group (United States)<br><a href="mailto:info@dcg.co">email</a> / <a href="https://twitter.com/dcgco">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-danger">
-					<th>F2Pool (China)</th>
-					<td><a href="https://www.coindesk.com/f2pool-reneges-mining-pool-pulls-segwit2x-support-hard-fork/">publicly withdrawn</a></td>
-				</tr>
-				<tr class="table-warning">
-					<th>Filament (United States)<br><a href="mailto:hello@filament.com">email</a> / <a href="https://twitter.com/filamenthq">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-success">
-					<th>Gavin Andresen (United States)<br><a href="mailto:gavinandresen@gmail.com">email</a> / <a href="https://twitter.com/gavinandresen">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Genesis Global Trading (United States)<br><a href="mailto:info@genesistrading.com">email</a> / <a href="https://twitter.com/genesistrading">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-success">
-					<th>Genesis Mining (Hong Kong)<br><a href="mailto:contact@genesis-mining.com">email</a> / <a href="https://twitter.com/genesismining">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>GoCoin (Isle of Man)<br><a href="mailto:info@gocoin.com">email</a> / <a href="https://twitter.com/gocoin">twitter</a></th>
-					<td>supports, ties to Bloq</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Grayscale Investments (United States)<br><a href="mailto:press@grayscale.co">email</a> / <a href="https://twitter.com/grayscaleinvest">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-success">
-					<th>Guy Corem (Israel)<br><a href="https://twitter.com/vcorem">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-success">
-					<th>Jaxx (Canada)<br><a href="https://twitter.com/jaxx_io">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Korbit (South Korea)<br><a href="mailto:info@korbit.co.kr">email</a> / <a href="https://twitter.com/korbitbtc">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Luno (Singapore)<br><a href="https://twitter.com/lunomoney">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>MONI (Finland)<br><a href="mailto:support@moni.com">email</a> / <a href="https://twitter.com/monimobile">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Netki (United States)<br><a href="https://twitter.com/netkicorp">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>OB1 (United States)<br><a href="https://twitter.com/ob1company">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Purse (United States)<br><a href="mailto:media@purse.io">email</a> / <a href="https://twitter.com/purseio">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Ripio (Argentina)<br><a href="mailto:press@ripio.com">email</a> / <a href="https://twitter.com/ripioapp">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Safello (Sweden)<br><a href="https://twitter.com/safelloab">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-success">
-					<th>SFOX (United States)<br><a href="mailto:support@sfox.com">email</a> / <a href="https://twitter.com/sfoxtrading">twitter</a></th>
-					<td>supports</td>
-				</tr>
-				<tr class="table-warning">
-					<th>ShapeShift (Switzerland)<br><a href="mailto:mail@shapeshift.io">email</a> / <a href="https://twitter.com/shapeshift_io">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>surBTC (Chile)<br><a href="mailto:contacto@surbtc.com">email</a> / <a href="https://twitter.com/surbtc">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-warning">
-					<th>Unocoin (India)<br><a href="mailto:support@unocoin.com">email</a> / <a href="https://twitter.com/unocoin">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-danger">
-					<th>Vaultoro (Germany)</th>
-					<td><a href="https://twitter.com/vaultoro/status/912605726262128642">publicly withdrawn</a></td>
-				</tr>
-				<tr class="table-warning">
-					<th>Veem (United States)<br><a href="mailto:business@veem.com">email</a> / <a href="https://twitter.com/goveem">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-secondary">
-					<th>ViaBTC (China)</th>
-					<td>moved on to Bitcoin Cash</td>
-				</tr>
-				<tr class="table-danger">
-					<th>Wayniloans (Argentina)</th>
-					<td><a href="https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-September/000303.html">publicly withdrawn</a></td>
-				</tr>
-				<tr class="table-warning">
-					<th>Xapo (United States)<br><a href="mailto:press@xapo.com">email</a> / <a href="https://twitter.com/">twitter</a></th>
-					<td>supports, belongs to DCG portfolio</td>
-				</tr>
-				<tr class="table-secondary">
-					<th>Yours (United States)</th>
-					<td>moved on to Bitcoin Cash</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<footer class="footer">
-		Send updates to <a href="https://twitter.com/pavolrusnak">@pavolrusnak</a>
-	</footer>
+    <div class="container">
+        <h1>SegWit2x NYA Status</h1>
+        <status></status>
+    </div>
+    <footer>
+        Idea by <a href="https://twitter.com/pavolrusnak">@pavolrusnak</a> &middot;
+        Code and design by <a href="https://twitter.com/marceljamin">@marceljamin</a> &middot;
+        For updates create a pull request <a href="https://github.com/prusnak/segwit.party/blob/gh-pages/nya/entities.json">here</a>
+    </footer>
 </body>
 </html>

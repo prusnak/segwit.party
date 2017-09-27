@@ -1,0 +1,368 @@
+[
+    {
+        "entity": "Bitwala (Germany)",
+        "status": 1,
+        "dcg": false,
+        "withdrawnUrl": "https://www.bitwala.com/bitwala-statement-segwit2x/"
+    },
+    {
+        "entity": "F2Pool (China)",
+        "status": 1,
+        "dcg": false,
+        "withdrawnUrl": "https://www.coindesk.com/f2pool-reneges-mining-pool-pulls-segwit2x-support-hard-fork/"
+    },
+    {
+        "entity": "Vaultoro (Germany)",
+        "status": 1,
+        "dcg": false,
+        "withdrawnUrl": "https://twitter.com/vaultoro/status/912605726262128642"
+    },
+    {
+        "entity": "Wayniloans (Argentina)",
+        "status": 1,
+        "dcg": false,
+        "withdrawnUrl": "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-September/000303.html"
+    },
+    {
+        "entity": "1Hash (China)",
+        "status": 2,
+        "dcg": false,
+        "email": "admin@1-hash.com"
+    },
+    {
+        "entity": "Abra (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "abraglobal",
+        "email": "contact@abra.com"
+    },
+    {
+        "entity": "ANX (Hong Kong)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "anx_intl",
+        "email": "support@anxintl.com"
+    },
+    {
+        "entity": "Bitangel.com / Chandler Guo (China)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "chandlerguo",
+        "email": "chandler@bitangel.com"
+    },
+    {
+        "entity": "Bitex (Argentina)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "bitexla",
+        "email": "hola@bitex.la"
+    },
+    {
+        "entity": "bitFlyer (Japan)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "bitflyer",
+        "email": "info@bitflyer.jp"
+    },
+    {
+        "entity": "Bitfury (United States)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "bitfurygroup",
+        "email": "info@bitfury.com"
+    },
+    {
+        "entity": "BitOasis (United Arab Emirates)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "bitoasis",
+        "email": "help@bitoasis.net"
+    },
+    {
+        "entity": "BitPay (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "bitpay",
+        "email": "media@bitpay.com"
+    },
+    {
+        "entity": "BitPesa (Kenya)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "bitpesa",
+        "email": "info@bitpesa.co"
+    },
+    {
+        "entity": "Bitso (Mexico)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "bitso"
+    },
+    {
+        "entity": "Bixin.com (China)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "bixincom",
+        "email": "support@bixin.com"
+    },
+    {
+        "entity": "Blockchain (UK)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "blockchain",
+        "email": "press@blockchain.com"
+    },
+    {
+        "entity": "Bloq (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "bloqinc",
+        "email": "hello@bloq.com"
+    },
+    {
+        "entity": "BTCC (China)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "yourbtcc",
+        "email": "press@btcc.com"
+    },
+    {
+        "entity": "BTER.com (China)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "btercom",
+        "email": "admin@mail.bter.com"
+    },
+    {
+        "entity": "Circle (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "circlepay",
+        "email": "info@circle.com"
+    },
+    {
+        "entity": "Civic (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "civickey",
+        "email": "vinny@civic.com"
+    },
+    {
+        "entity": "Coinbase (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "coinbase",
+        "email": "press@coinbase.com"
+    },
+    {
+        "entity": "Coins.ph (Phillipines)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "coinsph",
+        "email": "press@coins.ph"
+    },
+    {
+        "entity": "CryptoFacilities (UK)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "cryptofltd",
+        "email": "press@cryptofacilities.com"
+    },
+    {
+        "entity": "Decentral (Canada)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "decentralca",
+        "email": "info@decentral.ca"
+    },
+    {
+        "entity": "Digital Currency Group (United States)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "dcgco",
+        "email": "info@dcg.co"
+    },
+    {
+        "entity": "Filament (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "filamenthq",
+        "email": "hello@filament.com"
+    },
+    {
+        "entity": "Gavin Andresen (United States)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "gavinandresen",
+        "email": "gavinandresen@gmail.com"
+    },
+    {
+        "entity": "Genesis Global Trading (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "genesistrading",
+        "email": "info@genesistrading.com"
+    },
+    {
+        "entity": "Genesis Mining (Hong Kong)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "genesismining",
+        "email": "contact@genesis-mining.com"
+    },
+    {
+        "entity": "GoCoin (Isle of Man)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "gocoin",
+        "email": "info@gocoin.com",
+        "comment": "ties to Bloq"
+    },
+    {
+        "entity": "Grayscale Investments (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "grayscaleinvest",
+        "email": "press@grayscale.co"
+    },
+    {
+        "entity": "Guy Corem (Israel)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "vcorem"
+    },
+    {
+        "entity": "Jaxx (Canada)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "jaxx_io"
+    },
+    {
+        "entity": "Korbit (South Korea)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "korbitbtc",
+        "email": "info@korbit.co.kr"
+    },
+    {
+        "entity": "Luno (Singapore)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "lunomoney"
+    },
+    {
+        "entity": "MONI (Finland)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "monimobile",
+        "email": "support@moni.com"
+    },
+    {
+        "entity": "Netki (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "netkicorp"
+    },
+    {
+        "entity": "OB1 (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "ob1company"
+    },
+    {
+        "entity": "Purse (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "purseio",
+        "email": "media@purse.io"
+    },
+    {
+        "entity": "Ripio (Argentina)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "ripioapp",
+        "email": "press@ripio.com"
+    },
+    {
+        "entity": "Safello (Sweden)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "safelloab"
+    },
+    {
+        "entity": "SFOX (United States)",
+        "status": 2,
+        "dcg": false,
+        "twitter": "sfoxtrading",
+        "email": "support@sfox.com"
+    },
+    {
+        "entity": "ShapeShift (Switzerland)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "shapeshift_io",
+        "email": "mail@shapeshift.io"
+    },
+    {
+        "entity": "surBTC (Chile)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "surbtc",
+        "email": "contacto@surbtc.com"
+    },
+    {
+        "entity": "Unocoin (India)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "unocoin",
+        "email": "support@unocoin.com"
+    },
+    {
+        "entity": "Veem (United States)",
+        "status": 2,
+        "dcg": true,
+        "twitter": "goveem",
+        "email": "business@veem.com"
+    },
+    {
+        "entity": "Xapo (United States)",
+        "status": 2,
+        "dcg": true,
+        "email": "press@xapo.com"
+    },
+    {
+        "entity": "BitClub Network (Hong Kong)",
+        "status": 3,
+        "dcg": false
+    },
+    {
+        "entity": "Bitcoin.com (St. Kitts & Nevis)",
+        "status": 3,
+        "dcg": false
+    },
+    {
+        "entity": "Bitmain (China)",
+        "status": 3,
+        "dcg": false
+    },
+    {
+        "entity": "btc.com (China)",
+        "status": 3,
+        "dcg": false
+    },
+    {
+        "entity": "BTC.TOP (China)",
+        "status": 3,
+        "dcg": false
+    },
+    {
+        "entity": "ViaBTC (China)",
+        "status": 3,
+        "dcg": false
+    },
+    {
+        "entity": "Yours (United States)",
+        "status": 3,
+        "dcg": false
+    }
+]

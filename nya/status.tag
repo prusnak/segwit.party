@@ -49,7 +49,6 @@
     </table>
     <script>
         var self = this;
-        self.foo = true;
         self.entitiesByStatus = {};
         self.status = {
             1: "withdrawn",
@@ -58,6 +57,9 @@
         };
 
         self.getDropOutRate = function() {
+            if(!self.entitiesByStatus.hasOwnProperty(2))
+                return "100%";
+
             return Math.round((1 - (self.entitiesByStatus[2].length / self.entitiesByStatus.total)) * 100) + '%';
         }
 

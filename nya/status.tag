@@ -25,30 +25,30 @@
             <tr class="status-withdrawn" each={ entitiesByStatus[1] }>
                 <th>{ entity }</th>
                 <td><a if={withdrawnUrl} href="{withdrawnUrl}">{ parent.status[status] } &nbsp;<i class="fa fa-external-link"></i></a><span if={!withdrawnUrl}>{ parent.status[status] }</span></td>
-                <td>{ dcg == true ? "Yes" : "" }</td>
-                <td>{ bca == true ? "Yes" : "" }</td>
+                <td><i if={dcg} class="fa fa-check-circle"></i></td>
+                <td><i if={bca} class="fa fa-check-circle"></i></td>
                 <td><a if={twitter} href="https://twitter.com/{twitter}"><i class="fa fa-twitter"></i></a></td>
-                <td><a if={email} href="mailto:{email}"><i class="fa fa-envelope-o"></i></a></td>
+                <td><a if={email} href="mailto:{email}"><i class="fa fa-envelope"></i></a></td>
             </tr>
         </tbody>
         <tbody>
             <tr class={ status-supports: !dcg, status-supports-dcg: dcg } each={ entitiesByStatus[2] }>
                 <th>{ entity }</th>
                 <td><a if={withdrawnUrl} href="{withdrawnUrl}">{ parent.status[status] } &nbsp;<i class="fa fa-external-link"></i></a><span if={!withdrawnUrl}>{ parent.status[status] }</span></td>
-                <td>{ dcg == true ? "Yes" : "" }</td>
-                <td>{ bca == true ? "Yes" : "" }</td>
+                <td><i if={dcg} class="fa fa-check-circle"></i></td>
+                <td><i if={bca} class="fa fa-check-circle"></i></td>
                 <td><a if={twitter} href="https://twitter.com/{twitter}"><i class="fa fa-twitter"></i></a></td>
-                <td><a if={email} href="mailto:{email}"><i class="fa fa-envelope-o"></i></a></td>
+                <td><a if={email} href="mailto:{email}"><i class="fa fa-envelope"></i></a></td>
             </tr>
         </tbody>
         <tbody>
             <tr class="status-movedon" each={ entitiesByStatus[3] }>
                 <th>{ entity }</th>
                 <td><a if={withdrawnUrl} href="{withdrawnUrl}">{ parent.status[status] } &nbsp;<i class="fa fa-external-link"></i></a><span if={!withdrawnUrl}>{ parent.status[status] }</span></td>
-                <td>{ dcg == true ? "Yes" : "" }</td>
-                <td>{ bca == true ? "Yes" : "" }</td>
+                <td><i if={dcg} class="fa fa-check-circle"></i></td>
+                <td><i if={bca} class="fa fa-check-circle"></i></td>
                 <td><a if={twitter} href="https://twitter.com/{twitter}"><i class="fa fa-twitter"></i></a></td>
-                <td><a if={email} href="mailto:{email}"><i class="fa fa-envelope-o"></i></a></td>
+                <td><a if={email} href="mailto:{email}"><i class="fa fa-envelope"></i></a></td>
             </tr>
         </tbody>
     </table>

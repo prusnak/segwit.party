@@ -64,6 +64,10 @@ table>thead>tr>th {
     background: #444;
 }
 
+table>thead>tr>th a {
+    color: #fff;
+}
+
 table>tbody>tr>td:last-child {
     padding-left: 0;
 }

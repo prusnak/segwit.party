@@ -8,25 +8,21 @@
     {
         "entity": "F2Pool (China)",
         "status": 1,
-        "dcg": false,
         "withdrawnUrl": "https://www.coindesk.com/f2pool-reneges-mining-pool-pulls-segwit2x-support-hard-fork/"
     },
     {
         "entity": "Vaultoro (Germany)",
         "status": 1,
-        "dcg": false,
         "withdrawnUrl": "https://twitter.com/vaultoro/status/912605726262128642"
     },
     {
         "entity": "Wayniloans (Argentina)",
         "status": 1,
-        "dcg": false,
         "withdrawnUrl": "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-September/000303.html"
     },
     {
         "entity": "1Hash (China)",
         "status": 2,
-        "dcg": false,
         "email": "admin@1-hash.com"
     },
     {
@@ -39,21 +35,18 @@
     {
         "entity": "ANX (Hong Kong)",
         "status": 2,
-        "dcg": false,
         "twitter": "anx_intl",
         "email": "support@anxintl.com"
     },
     {
         "entity": "Bitangel.com / Chandler Guo (China)",
         "status": 2,
-        "dcg": false,
         "twitter": "chandlerguo",
         "email": "chandler@bitangel.com"
     },
     {
         "entity": "Bitex (Argentina)",
         "status": 2,
-        "dcg": false,
         "twitter": "bitexla",
         "email": "hola@bitex.la"
     },
@@ -67,7 +60,7 @@
     {
         "entity": "Bitfury (United States)",
         "status": 2,
-        "dcg": false,
+        "bca": true,
         "twitter": "bitfurygroup",
         "email": "info@bitfury.com"
     },
@@ -82,6 +75,7 @@
         "entity": "BitPay (United States)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "bitpay",
         "email": "media@bitpay.com"
     },
@@ -89,6 +83,7 @@
         "entity": "BitPesa (Kenya)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "bitpesa",
         "email": "info@bitpesa.co"
     },
@@ -96,12 +91,12 @@
         "entity": "Bitso (Mexico)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "bitso"
     },
     {
         "entity": "Bixin.com (China)",
         "status": 2,
-        "dcg": false,
         "twitter": "bixincom",
         "email": "support@bixin.com"
     },
@@ -109,6 +104,7 @@
         "entity": "Blockchain (UK)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "blockchain",
         "email": "press@blockchain.com"
     },
@@ -116,6 +112,7 @@
         "entity": "Bloq (United States)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "bloqinc",
         "email": "hello@bloq.com"
     },
@@ -129,7 +126,6 @@
     {
         "entity": "BTER.com (China)",
         "status": 2,
-        "dcg": false,
         "twitter": "btercom",
         "email": "admin@mail.bter.com"
     },
@@ -137,6 +133,7 @@
         "entity": "Circle (United States)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "circlepay",
         "email": "info@circle.com"
     },
@@ -151,6 +148,7 @@
         "entity": "Coinbase (United States)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "coinbase",
         "email": "press@coinbase.com"
     },
@@ -171,14 +169,12 @@
     {
         "entity": "Decentral (Canada)",
         "status": 2,
-        "dcg": false,
         "twitter": "decentralca",
         "email": "info@decentral.ca"
     },
     {
         "entity": "Digital Currency Group (United States)",
         "status": 2,
-        "dcg": false,
         "twitter": "dcgco",
         "email": "info@dcg.co"
     },
@@ -192,7 +188,6 @@
     {
         "entity": "Gavin Andresen (United States)",
         "status": 2,
-        "dcg": false,
         "twitter": "gavinandresen",
         "email": "gavinandresen@gmail.com"
     },
@@ -206,14 +201,12 @@
     {
         "entity": "Genesis Mining (Hong Kong)",
         "status": 2,
-        "dcg": false,
         "twitter": "genesismining",
         "email": "contact@genesis-mining.com"
     },
     {
         "entity": "GoCoin (Isle of Man)",
         "status": 2,
-        "dcg": false,
         "twitter": "gocoin",
         "email": "info@gocoin.com",
         "comment": "ties to Bloq"
@@ -228,13 +221,11 @@
     {
         "entity": "Guy Corem (Israel)",
         "status": 2,
-        "dcg": false,
         "twitter": "vcorem"
     },
     {
         "entity": "Jaxx (Canada)",
         "status": 2,
-        "dcg": false,
         "twitter": "jaxx_io"
     },
     {
@@ -261,6 +252,7 @@
         "entity": "Netki (United States)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "twitter": "netkicorp"
     },
     {
@@ -292,7 +284,6 @@
     {
         "entity": "SFOX (United States)",
         "status": 2,
-        "dcg": false,
         "twitter": "sfoxtrading",
         "email": "support@sfox.com"
     },
@@ -328,37 +319,32 @@
         "entity": "Xapo (United States)",
         "status": 2,
         "dcg": true,
+        "bca": true,
         "email": "press@xapo.com"
     },
     {
         "entity": "BitClub Network (Hong Kong)",
-        "status": 3,
-        "dcg": false
+        "status": 3
     },
     {
         "entity": "Bitcoin.com (St. Kitts & Nevis)",
-        "status": 3,
-        "dcg": false
+        "status": 3
     },
     {
         "entity": "Bitmain (China)",
-        "status": 3,
-        "dcg": false
+        "status": 3
     },
     {
         "entity": "btc.com (China)",
-        "status": 3,
-        "dcg": false
+        "status": 3
     },
     {
         "entity": "BTC.TOP (China)",
-        "status": 3,
-        "dcg": false
+        "status": 3
     },
     {
         "entity": "ViaBTC (China)",
-        "status": 3,
-        "dcg": false
+        "status": 3
     },
     {
         "entity": "Yours (United States)",

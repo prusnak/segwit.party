@@ -161,10 +161,11 @@
     },
     {
         "entity": "CryptoFacilities (UK)",
-        "status": 2,
+        "status": 1,
         "dcg": true,
         "twitter": "cryptofltd",
-        "email": "press@cryptofacilities.com"
+        "email": "press@cryptofacilities.com",
+        "withdrawnUrl": "https://www.reddit.com/r/Bitcoin/comments/740son/nya_signer_uk_company_crypto_facilities_pulls/"
     },
     {
         "entity": "Decentral (Canada)",

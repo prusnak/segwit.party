@@ -3,21 +3,26 @@
         "entity": "Bitwala (Germany)",
         "status": 1,
         "dcg": true,
+        "twitter": "bitwala",
         "withdrawnUrl": "https://www.bitwala.com/bitwala-statement-segwit2x/"
     },
     {
         "entity": "F2Pool (China)",
         "status": 1,
+        "twitter": "f2pool_wangchun",
         "withdrawnUrl": "https://www.coindesk.com/f2pool-reneges-mining-pool-pulls-segwit2x-support-hard-fork/"
     },
     {
         "entity": "Vaultoro (Germany)",
         "status": 1,
+        "email": "joshua@vaultoro.com",
+        "twitter": "vaultoro",
         "withdrawnUrl": "https://twitter.com/vaultoro/status/912605726262128642"
     },
     {
         "entity": "Wayniloans (Argentina)",
         "status": 1,
+        "twitter": "wayniloans",
         "withdrawnUrl": "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-September/000303.html"
     },
     {

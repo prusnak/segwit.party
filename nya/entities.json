@@ -181,6 +181,7 @@
     {
         "entity": "Digital Currency Group (United States)",
         "status": 2,
+        "dcg": true,
         "twitter": "dcgco",
         "email": "info@dcg.co"
     },

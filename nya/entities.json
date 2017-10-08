@@ -26,11 +26,6 @@
         "withdrawnUrl": "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-September/000303.html"
     },
     {
-        "entity": "1Hash (China)",
-        "status": 2,
-        "email": "admin@1-hash.com"
-    },
-    {
         "entity": "Abra (United States)",
         "status": 2,
         "dcg": true,
@@ -328,6 +323,10 @@
         "dcg": true,
         "bca": true,
         "email": "press@xapo.com"
+    },
+    {
+        "entity": "1Hash (China)",
+        "status": 3
     },
     {
         "entity": "BitClub Network (Hong Kong)",

@@ -66,10 +66,11 @@
     },
     {
         "entity": "BitOasis (United Arab Emirates)",
-        "status": 2,
+        "status": 1,
         "dcg": true,
         "twitter": "bitoasis",
-        "email": "help@bitoasis.net"
+        "email": "help@bitoasis.net",
+        "withdrawnUrl": "https://www.reddit.com/r/Bitcoin/comments/75au0p/nya_signer_uae_company_bitoasis_wont_support_s2x/"
     },
     {
         "entity": "BitPay (United States)",

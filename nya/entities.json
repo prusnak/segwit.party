@@ -299,10 +299,11 @@
     },
     {
         "entity": "surBTC (Chile)",
-        "status": 2,
+        "status": 1,
         "dcg": true,
         "twitter": "surbtc",
-        "email": "contacto@surbtc.com"
+        "email": "contacto@surbtc.com",
+        "withdrawnUrl": "https://blog.surbtc.com/our-stance-on-the-segwit2x-hard-fork-9fd04323667b"
     },
     {
         "entity": "Unocoin (India)",

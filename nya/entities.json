@@ -258,10 +258,11 @@
   },
   {
     "entity": "MONI (Finland)",
-    "status": 2,
+    "status": 1,
     "dcg": true,
     "twitter": "monimobile",
-    "email": "support@moni.com"
+    "email": "support@moni.com",
+    "withdrawnUrl": "https://twitter.com/WhalePanda/status/923784663436595200"
   },
   {
     "entity": "Netki (United States)",

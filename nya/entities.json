@@ -147,10 +147,11 @@
   },
   {
     "entity": "Civic (United States)",
-    "status": 2,
+    "status": 1,
     "dcg": true,
     "twitter": "civickey",
-    "email": "vinny@civic.com"
+    "email": "vinny@civic.com",
+    "withdrawnUrl": "https://twitter.com/VinnyLingham/status/926152976149839872"
   },
   {
     "entity": "Coinbase (United States)",

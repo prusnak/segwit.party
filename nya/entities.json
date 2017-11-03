@@ -81,10 +81,11 @@
   },
   {
     "entity": "Bitso (Mexico)",
-    "status": 2,
+    "status": 1,
     "dcg": true,
     "bca": true,
-    "twitter": "bitso"
+    "twitter": "bitso",
+    "withdrawnUrl": "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000632.html"
   },
   {
     "entity": "Bitwala (Germany)",

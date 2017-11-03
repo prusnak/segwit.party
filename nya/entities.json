@@ -273,9 +273,10 @@
   },
   {
     "entity": "OB1 (United States)",
-    "status": 2,
+    "status": 1,
     "dcg": true,
-    "twitter": "ob1company"
+    "twitter": "ob1company",
+    "withdrawnUrl": "https://medium.com/@brianhoffman/segwit2x-youre-fucked-if-you-do-you-re-fucked-if-you-don-t-6655a853d8e7"
   },
   {
     "entity": "Purse (United States)",

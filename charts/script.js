@@ -72,49 +72,74 @@ var chart_size = new Chart(ctx_size, {
 });
 
 var drawCharts = function(period) {
-
     fetch('http://eris.gk2.sk/data.json').then(function(response) {
         return response.json();
     }).then(function(blockData) {
-        blockData = blockData.sort(function(a, b) { return a.height - b.height;});
+        blockData = blockData.sort(function(a, b) { return a.height - b.height;}).slice(-period);
 
         if (period > blockData.length) {
             period = 0;
         }
 
+        var initial_series = {
+            labels: [],
+            segwit_count: [],
+            non_segwit_count: [],
+            total_count: [],
+            percent: [],
+            witness_size: [],
+            block_size: [],
+            block_weight: [],
+            size_percent: [],
+            size_segwit: [],
+            size_total: [],
+        };
+
+        var series = blockData.reduce(function(all_series, item) {
+            all_series.labels.push(item.height)
+            all_series.segwit_count.push(item.txsegwit);
+            all_series.non_segwit_count.push(item.txtotal - item.txsegwit);
+            all_series.total_count.push(item.txtotal);
+            all_series.percent.push(100 * item.txsegwit / item.txtotal);
+            all_series.witness_size.push(item.size - item.strippedsize);
+            all_series.block_size.push(item.size);
+            all_series.block_weight.push(item.weight);
+            all_series.size_percent.push(100 * (item.size - item.strippedsize) / (item.size));
+            all_series.size_segwit.push(item.size - item.strippedsize);
+            all_series.size_total.push(item.size);
+            return all_series;
+        }, initial_series);
+
+
         var data_count = {
-            labels: blockData.map(function(item){ return item.height; }).slice(-period),
+            labels: series.labels,
             datasets: [{
                 label: 'SegWit',
-                data: blockData.map(function(item){ return item.txsegwit; }).slice(-period),
+                data: series.segwit_count,
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }, {
                 label: 'Non-SegWit',
-                data: blockData.map(function(item){ return item.txtotal - item.txsegwit; }).slice(-period),
+                data: series.non_segwit_count,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 1
             }]
         };
 
-        var count_percent = blockData.map(function(item){ return 100 * item.txsegwit / item.txtotal; });
-        var count_segwit = blockData.map(function(item){ return item.txsegwit; });
-        var count_total = blockData.map(function(item){ return item.txtotal; });
-
         var data_count_percent = {
-            labels: blockData.map(function(item){ return item.height; }).slice(-period),
+            labels: series.labels,
             datasets: [{
                 label: '144-block moving average',
-                data: movingAvg2(count_segwit, count_total, 144).slice(-period),
+                data: movingAvg2(series.segwit_count, series.total_count, 144),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }, {
                 hidden: true,
                 label: 'value per block',
-                data: count_percent.slice(-period),
+                data: series.percent,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 1
@@ -122,45 +147,41 @@ var drawCharts = function(period) {
         };
 
         var data_size = {
-            labels: blockData.map(function(item){ return item.height; }).slice(-period),
+            labels: series.labels,
             datasets: [{
                 label: 'witness size',
-                data: blockData.map(function(item){ return item.size - item.strippedsize; }).slice(-period),
+                data: series.witness_size,
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }, {
                 label: 'block size',
-                data: blockData.map(function(item){ return item.size; }).slice(-period),
+                data: series.block_size,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 1
             }, {
                 hidden: true,
                 label: 'block weight',
-                data: blockData.map(function(item){ return item.weight; }).slice(-period),
+                data: series.block_weight,
                 backgroundColor: 'rgba(255, 206, 86, 0.2)',
                 borderColor: 'rgba(255, 206, 86, 1)',
                 borderWidth: 1,
             }]
         };
 
-        var size_percent = blockData.map(function(item){ return 100 * (item.size - item.strippedsize) / (item.size); });
-        var size_segwit = blockData.map(function(item){ return item.size - item.strippedsize; });
-        var size_total = blockData.map(function(item){ return item.size; });
-
         var data_size_percent = {
-            labels: blockData.map(function(item){ return item.height; }).slice(-period),
+            labels: series.labels,
             datasets: [{
                 label: '144-block moving average',
-                data: movingAvg2(size_segwit, size_total, 144).slice(-period),
+                data: movingAvg2(series.size_segwit, series.size_total, 144),
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }, {
                 hidden: true,
                 label: 'value per block',
-                data: size_percent.slice(-period),
+                data: series.size_percent,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 1
